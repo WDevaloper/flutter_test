@@ -14,3 +14,9 @@ dependencyResolutionManagement {
 }
 rootProject.name = "flutter_test"
 include ':app'
+
+//通过子模块引入flutter module
+//git submodule add {flutter module的仓库地址}
+//git submodule update
+setBinding(new Binding([gradle: this]))
+evaluate(new File(settingsDir, 'flutter_test_module/.android/include_flutter.groovy'))

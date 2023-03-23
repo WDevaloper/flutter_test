@@ -1,0 +1,3 @@
+[submodule "flutter_test_module"]
+	path = flutter_test_module
+	url = git@github.com:WDevaloper/flutter_test_module.git
